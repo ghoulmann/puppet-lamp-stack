@@ -38,8 +38,19 @@ class php::pear {
     require => [Exec["pear channel-discover pear.phpunit.de; true"], Exec["pear channel-discover pear.symfony-project.com; true"], Exec["pear channel-discover components.ez.no; true"]]
   }
 
-  # install phpunit
-  exec { "pear install -a -f phpunit/PHPUnit":
+  # install Pear Mail_Mime
+  exec { "pear install Mail_Mime":
+    require => Exec["pear clear-cache"]
+  }
+  
+  
+  # install Net_SMTP
+  exec { "pear install Net_SMTP":
+    require => Exec["pear clear-cache"]
+  }
+
+  # install Pear Mail
+  exec { "pear install Mail":
     require => Exec["pear clear-cache"]
   }
 }
