@@ -20,15 +20,15 @@ Credit must be given where credit is due. Most of this work was made possible by
 
 2. Install precise32 Vagrant box. (If not installed already)
 
-($ stands for your user prompt throughout this document)
+    ($ stands for your user prompt throughout this document)
 
 	$ vagrant box add precise32 http://files.vagrantup.com/precise32.box
 
 3. Go to the folder where you want your development environment. For example, /Documents.
 
-#. $ cd ~/Documents (in my example)
+4. $ cd ~/Documents (in my example)
 
-#. $ git clone https://github.com/ghoulmann/puppet-lamp-stack.git mobile-web
+5. $ git clone https://github.com/ghoulmann/puppet-lamp-stack.git mobile-web
 
 4. The directory "webroot" in the root directory of the clone (/Documents/mobile-web) will act as your root web folder.
 
