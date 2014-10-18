@@ -11,5 +11,3 @@ include php::pear
 include php::pecl
 include mysql
 include phpmyadmin
-include drush
-include git
